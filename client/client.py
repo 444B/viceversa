@@ -4,7 +4,7 @@ import uuid
 import time
 
 # Replace 'server_ip_address' with the actual server IP or hostname
-SERVER_URL = 'http://10.132.0.4:8080/'  # Ensure this is correct
+SERVER_URL = 'http://:80/'  # Ensure this is correct
 
 def main():
     # Generate a persistent UUID for this client instance

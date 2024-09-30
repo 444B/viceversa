@@ -38,9 +38,9 @@ class MyHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Data received")
 
 def run(server_class=HTTPServer, handler_class=MyHandler):
-    server_address = ('', 8080)  # Changed port to 8080
+    server_address = ('', 80)  # Changed port to 80
     httpd = server_class(server_address, handler_class)
-    print('Starting HTTP server on port 8080...')
+    print('Starting HTTP server on port 80...')
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
